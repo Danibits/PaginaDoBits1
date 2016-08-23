@@ -1,0 +1,194 @@
+﻿<ion-view view-title={{pagetitle}}>
+  <ion-content class="">
+	<!-- lista de data[0]ações -->
+
+	<div class="list" >
+		<div class="item"> 
+			<!--
+			Falta aqui neste pedaço configurar o código para buscar de que atendimento se trata e seus componentes para escrever na tela. 
+			O texto aqui é meramente placeholder para design
+			-->
+			<div class="row" > 
+				<div class="col" style="max-width:25vmin" >
+					<img src="img/Consultas_Icone.jpg" style="width:18vmin; padding-left:6%">
+				</div>
+				<div class="col" >
+					<span class="txtvertalign">Consulta </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<br/>
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<br/>
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_consulta">
+				</div>
+			</div>
+		</div>
+		<div class="item"> 
+			<div class="row">
+				<div class="col" style="max-width:25vmin" >
+					<img src="img/Curativos_Icone.jpg" style="width:18vmin; padding-left:6%">
+				</div>
+				<div class="col" >
+					<span class="txtvertalign">Curativos </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<br/>
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<br/>
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_curativo">
+				</div>
+			</div>
+		</div>
+		<div class="item"> 
+			<div class="row">
+				<div class="col" style="max-width:25vmin" >
+					<img src="img/AdministracaoDeMedicamentos_Icone.jpg" style="width:18vmin; padding-left:6%">
+				</div>
+				<div class="col center" >
+					<span style="font-size:4vmin; color:#000">Administração <br/>de <br/>Medicamentos </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<br/>
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<br/>
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_admin">
+				</div>
+			</div>
+		</div>
+		<div class="item"> 
+			<div class="row">
+				<div class="col" style="max-width:25vmin" >
+					<img src="img/AdministracaoDeMedicamentos_Icone.jpg" style="width:18vmin; padding-left:6%">
+				</div>
+				<div class="col" >
+					<span class="txtvertalign">Exames </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" style="min-width:54.25vmin" >
+					<input type="checkbox"><span style="font-size:4vmin; color:#000"> Fezes </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_fezes">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" style="min-width:54.25vmin" >
+					<input type="checkbox"><span style="font-size:4vmin; color:#000"> Urina </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_urina">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" style="min-width:54.25vmin" >
+					<input type="checkbox"><span style="font-size:4vmin; color:#000"> Sangue </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_sangue">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col" style="min-width:54.25vmin" >
+					<input type="checkbox"><span style="font-size:4vmin; color:#000"> Raspado de pele </span>
+				</div>
+				<div class="col" style="max-width:5vmin" >
+					<span style="font-size:3vmin; color:#000">R$ </span>
+				</div>
+				<div class="col" >
+					<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " ng-model="data.flo_serv_raspado">
+				</div>
+			</div>
+		</div>
+		<div class="item"> 
+			<div class="row">
+				<div class="col" style="max-width:25vmin" >
+					<img src="img/Vacinas_Icone.jpg" style="width:18vmin; padding-left:6%">
+				</div>
+				<div class="col" >
+					<br/>
+					<span style="font-size:4vmin; color:#000">Vacinas </span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col center" style="background-color:#404040; color:#fff; min-width:90%" >
+					<span>Vacinas para cães</span>
+				</div>
+				<div class="col center" ng-click="mostraCao()" style="background-color:#fba919; color:#fff" >
+					<span>+</span>
+				</div>
+			</div>
+<!--
+			parte das divs ocultaveis
+-->
+			<div ng-show="showCao">
+				<div class="row" style="border-bottom: 1px solid #555">
+					<div class="col" style="min-width:65%">
+<!--
+						valor da data aqui ainda nao foi programado
+-->
+						{{data.vacina1}}
+					</div>
+					<div class="col" style="max-width:6vmin">
+						<span>R$</span>
+					</div>
+					<div class="col">
+						<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " placeholder="" ng-model="valor1">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col center" style="background-color:#404040; color:#fff; min-width:90%" >
+					<span>Vacinas para gatos</span>
+				</div>
+				<div class="col center" ng-click="mostraGato()" style="background-color:#fba919; color:#fff" >
+					<span>+</span>
+				</div>
+			</div>
+			<div ng-show="showGato">
+				<div class="row" style="border-bottom: 1px solid #555">
+					<div class="col" style="min-width:65%">
+<!--
+						valor da data aqui ainda nao foi programado
+-->
+						{{data.vacina1}}
+					</div>
+					<div class="col" style="max-width:6vmin">
+						<span>R$</span>
+					</div>
+					<div class="col">
+						<input type="number" style="border: 1px solid #999; max-width:20vmin; max-height:3.5vmax " placeholder="" ng-model="valor1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item"> 
+			<div class="row">
+				<div class="col" style="max-width:80vmin" >
+<!--
+					falta fazer o botão salvar
+-->
+					<button class="button button-block custom" type="button" ng-click="">SALVAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		
+  </ion-content>
+</ion-view>
